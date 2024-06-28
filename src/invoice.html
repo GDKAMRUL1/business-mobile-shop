@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col-6">
+          <h2>Invoice</h2>
+        </div>
+        <div class="col-6 text-right">
+          <h5>Invoice Number: <span id="invoiceNumber"></span></h5>
+          <h5>Date: <span id="invoiceDate"></span></h5>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col">
+          <h4>Customer Details</h4>
+          <p><strong>Name:</strong> <span id="customerName"></span></p>
+          <p><strong>Email:</strong> <span id="customerEmail"></span></p>
+          <p><strong>Phone:</strong> <span id="customerPhone"></span></p>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Item ID</th>
+                <th>Item Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody id="invoiceItems">
+              <!-- Invoice items will be added dynamically here -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col text-right">
+          <h4>Total Amount: <span id="totalAmount"></span></h4>
+        </div>
+      </div>
+      <button id="backToMain" class="btn btn-secondary mt-3">
+        Back to Main
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

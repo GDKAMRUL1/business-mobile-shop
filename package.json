@@ -1,0 +1,14 @@
+{
+  "name": "business-mobile-shop",
+  "version": "1.0.0",
+  "description": "Business Mobile Shop desktop app",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^latest_version"
+  }
+}
